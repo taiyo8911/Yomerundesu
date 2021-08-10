@@ -15,14 +15,15 @@
     <a href="">
       <h1>よめルンです</h1>
     </a>
-    <p>未来のシフトを調べるサイト</p>
+    <p>未来のシフトを調べるアプリ</p>
   </header>
 
   <div class="container">
     <p class="mb-3">調べたい日を入れて下さい。</p>
-    <input id="day2" type="date" class="inputSize mb-3" />
+    <input id="value1" type="date" class="inputSize mb-5">
+
     <p class="mb-3">最近やったシフトを入れて下さい。</p>
-    <select id="recently" class="inputSize mb-3">
+    <select id="value2" class="inputSize mb-5">
       <option>271</option>
       <option>272</option>
       <option>273</option>
@@ -51,17 +52,21 @@
       <option>296</option>
       <option>297</option>
     </select>
+
     <p class="mb-3">それはいつですか？</p>
-    <input name="date" id="day1" type="date" class="inputSize mb-3" />
-    <p><button class="btn-lg btn-primary" onclick="calc()" id="button">調べる</button></p>
+    <input id="value3" name="date" type="date" class="inputSize mb-5" />
+
+    <p><button id="searchBtn" class="btn-lg btn-primary" onclick="search()">調べる</button></p>
+
     <p id="result" class="display-3"></p>
   </div>
+
   <footer>
-    <p>made in TAIYO</p>
+    <p>2021年3月</p>
   </footer>
 
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

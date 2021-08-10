@@ -52,3 +52,14 @@ footer p {
     font-size: 12px;
     line-height: 50px;
 }
+
+/* 480px以下に適用されるCSS（スマホ用） */
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 1.2rem;
+    }
+    .inputSize {
+        font-size: 1.5rem;
+    }
+}
