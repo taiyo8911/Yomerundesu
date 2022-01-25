@@ -1,4 +1,5 @@
 * {
+    /* フォームに関するデフォルトCSSを初期化 */
     -webkit-appearance: none;
 }
 
@@ -6,60 +7,48 @@ body {
     background-color: #EFEFEF;
 }
 
+p {
+    font-weight: bold;
+}
+
 header {
     text-align: center;
-    font-weight: bold;
     background-color: rgb(188, 239, 252);
-    border-top: double 15px white;
-    border-bottom: double 15px white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 22px;
 }
 
 header p {
-    font-size: 15px;
+    margin-bottom: 0;
 }
+
 
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
-h1 {
-    margin: 10px 0;
-}
-
-p {
-    font-size: 25px;
-}
-
-a {
-    text-decoration: none;
-    color: darkblue;
-}
-
-.inputSize {
+input, select {
     font-size: 30px;
 }
 
-footer {
-    background-color: white;
-    text-align: center;
-    background-color: rgb(188, 239, 252);
-    border-top: solid 1px;
-    height: 50px;
+.result {
+    font-size: 25px;
 }
 
-footer p {
-    font-size: 12px;
-    line-height: 50px;
-}
 
 /* 480px以下に適用されるCSS（スマホ用） */
-
 @media screen and (max-width: 480px) {
     p {
         font-size: 1.2rem;
     }
-    .inputSize {
-        font-size: 1.5rem;
+
+    input, select {
+        font-size: 1.2rem;
     }
+
 }
