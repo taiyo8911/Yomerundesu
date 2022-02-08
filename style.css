@@ -26,10 +26,9 @@ header p {
     margin-bottom: 0;
 }
 
-
 .container {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    padding: 0;
 }
 
 input, select {
@@ -40,6 +39,14 @@ input, select {
     font-size: 25px;
 }
 
+.work {
+    display: flex;
+}
+
+.box {
+    width: 50%;
+}
+
 
 /* 480px以下に適用されるCSS（スマホ用） */
 @media screen and (max-width: 480px) {
@@ -48,7 +55,10 @@ input, select {
     }
 
     input, select {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
+    select {
+        font-size: 1.25rem;
+    }
 }
