@@ -1,64 +1,27 @@
 * {
-    /* フォームに関するデフォルトCSSを初期化 */
-    -webkit-appearance: none;
-}
-
-body {
-    background-color: #EFEFEF;
-}
-
-p {
-    font-weight: bold;
-}
-
-header {
-    text-align: center;
-    background-color: rgb(188, 239, 252);
-    padding: 10px;
-    font-weight: bold;
-}
-
-header h1 {
-    font-size: 22px;
-}
-
-header p {
-    margin-bottom: 0;
-}
-
-.container {
-    width: 80%;
+    margin: 0;
     padding: 0;
 }
 
-input, select {
-    font-size: 30px;
+body {
+    background-color: rgb(202, 223, 229);
+}
+
+.container {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner {
+    margin: 0 auto;
 }
 
 .result {
-    font-size: 25px;
-}
-
-.work {
-    display: flex;
-}
-
-.box {
-    width: 50%;
-}
-
-
-/* 480px以下に適用されるCSS（スマホ用） */
-@media screen and (max-width: 480px) {
-    p {
-        font-size: 1.2rem;
-    }
-
-    input, select {
-        font-size: 1rem;
-    }
-
-    select {
-        font-size: 1.25rem;
-    }
+    font-size: 20px;
+    margin-top: 40px;
 }

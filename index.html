@@ -1,31 +1,29 @@
 <!doctype html>
 <html lang="ja">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <title>勤務よめる君</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>交番予想アプリ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <header class="mb-2">
-    <h1><a href="">○月△日の勤務を調べるアプリ</a></h1>
-    <p class="lead">2022年3月12日 改正</p>
-  </header>
-
-  <main>
+  <body>
     <div class="container">
-      <div class="serch-day">
-        <p class="mb-2">調べたい日</p>
-        <input id="find-day" type="date" class="mb-5">
-      </div>
+      <div class="inner">
 
-      <div class="work">
-        <div class="box">
-          <p class="mb-2">直近の勤務</p>
+        <h1><a href="">交番検索</a></h1>
+        <p>○月○日の勤務を調べるアプリ</p>
+        <p class="mb-5">2023年3月18日（改正）</p>
+
+        <div class="mb-5">
+          <label for="target-day">調べたい日</label>
+          <input id="target-day" type="date">
+        </div>
+
+        <div>
+          <label for="work">直近の勤務</label>
           <select id="work">
             <option>選択▼</option>
             <script>
@@ -36,23 +34,24 @@
           </select>
         </div>
 
-        <div class="box">
-          <p class="mb-2">その日にち</p>
+        <div>
+          <label for="work-day">その日付：</label>
           <input id="work-day" name="date" type="date" class="mb-5">
         </div>
-      </div>
 
-      <div class="serch-btn mb-3">
-        <button id="searchBtn" class="btn-lg btn-primary" onclick="search()">調べる</button>
-      </div>
+        <div class="serch-btn mb-3">
+          <button id="searchBtn" class="btn-lg btn-primary" onclick="search()">調べる</button>
+        </div>
 
-      <div class="resultBox">
-        <p id="day"></p>
-        <p id="result" class="display-4"></p>
+        <div class="result">
+          <p id="target_day"></p>
+          <p id="target_work"></p>
+        </div>
+
       </div>
     </div>
-  </main>
-  <script src="main.js"></script>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 
 </html>
